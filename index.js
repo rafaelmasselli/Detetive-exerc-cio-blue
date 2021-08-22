@@ -1,5 +1,5 @@
 
-console.log('voce esta sendo interrogado de um assasinato,Digite 1 para sim e 0 para não');
+console.log('voce esta sendo interrogado de um assasinato, Digite 1 para sim e 0 para não');
 let p1 = +prompt ('Telefonou para a vítima?');
 let p2 = +prompt ('esteve no local do crime?');
 let p3 = +prompt ('mora perto da vitima?');
