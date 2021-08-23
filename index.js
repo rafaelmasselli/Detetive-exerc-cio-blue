@@ -34,5 +34,5 @@ if (p1+p2+p3+p4+p5 === 0){
   console.log('Assasino');
 
 } else if (p1+p2+p3+p4+p5 >= 6){
-  console.log('obviamente o assasino')
+  console.log('obviamente o assasino');
 }
