@@ -1,9 +1,9 @@
+console.log('voce esta sendo interrogado de um assasinato');
+console.log('Digite 1 para sim e 0 para não');
 
+//perguntas para o suspeito
 
-console.log('voce esta sendo interrogado de um assasinato, Digite 1 para sim e 0 para não');
-
-
-let p1 = +prompt ('Telefonou para a vítima?');
+let p1 = +prompt('Telefonou para a vítima?');
 
 let p2 = +prompt ('esteve no local do crime?');
 
@@ -13,7 +13,7 @@ let p4 = +prompt ('devia para a vitima?');
 
 let p5 = +prompt ('ja trabalhou com a vitima?');
 
-
+// condições
 
 if (p1+p2+p3+p4+p5 === 0){
   console.log('Inocente');
@@ -32,4 +32,7 @@ if (p1+p2+p3+p4+p5 === 0){
   
 } else if (p1+p2+p3+p4+p5 === 5){
   console.log('Assasino');
+
+} else if (p1+p2+p3+p4+p5 >= 6){
+  console.log('obviamente o assasino')
 }
