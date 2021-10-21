@@ -20,7 +20,7 @@
 
 <h1>Projeto 4 election </h1>
  
-<li> estrutura feita com um while para validar somente numeros inteiro, com function para validar a idade do usuario recenbendo com um if else para adicionar as informacoes em um bojeto, exibindo o vencedor com um if else </li> 
+<li> estrutura feita com um while para validar somente numeros inteiro, com function para validar a idade do usuario recenbendo com um if else para adicionar as informacoes em um objeto, exibindo o vencedor com um if else </li> 
 
 ![boom-barrack-obama](https://user-images.githubusercontent.com/89049153/138198816-66d48ac5-0011-4cd8-86ed-ade1ed1b111a.gif)
 
