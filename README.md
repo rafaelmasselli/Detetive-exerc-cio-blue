@@ -26,6 +26,7 @@
 
 <h1>Projeto 5 Interative Fiction</h1>
 
+<li> Estrutura feita por classes para receber o formulario feito com o prompt(input) para determina a idade e o nome do jogador, trazendo 5 finais com estruturas if else, utilizazndo tb um laço de repetição while para determina se o jogador "deseja jogar novamente" levando um final com uma estrutura function com um callback para exibir as estatisticas finais da interação do usuario</li>
+
 ![03bfeab0aaeaa5419e35981c2972ce39](https://user-images.githubusercontent.com/89049153/138199385-0f85d5d4-a853-48d9-8b2f-96cb22dfa609.gif)
 
-<li> Estrutura feita por classes para receber o formulario feito com o prompt(input) para determina a idade e o nome do jogador, trazendo 5 finais com estruturas if else, utilizazndo tb um laço de repetição while para determina se o jogador "deseja jogar novamente" levando um final com uma estrutura function com um callback para exibir as estatisticas finais da interação do usuario</li>
