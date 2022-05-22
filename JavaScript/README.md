@@ -14,6 +14,12 @@
 
 
 # Instalação do projeto 
-```
 
+```
+// Clonando o projeto 
+$ git clone https://github.com/rafaelmasselli/Algoritmo
+
+//Entrando no projeto 
+> cd JavaScript
+> (cd Projeto)
 ```
