@@ -39,11 +39,12 @@ export async function Detetive() {
     console.clear();
     console.log(respostas[i]);
     ValidarPergunta(pergunta);
+    console.log(contador);
   }
   if (contador >= 4) {
     console.clear();
     console.log("Voce e culpado");
-  } else if ((contador = 3)) {
+  } else if (contador == 3) {
     console.clear();
     console.log("Voce e suspeito");
   } else if (contador < 2) {
