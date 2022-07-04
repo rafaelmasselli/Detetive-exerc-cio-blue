@@ -1,3 +1,5 @@
+import chalk from "chalk";
+
 const prompt = require("prompt-sync")();
 
 const perguntas = [
@@ -18,14 +20,20 @@ const respostas = [
 
 let contador = 0;
 
-function ValidarPergunta(pergunta: string) {
-  if (pergunta[0].toLocaleLowerCase() == "s") {
-    return contador++;
-  } else if (pergunta[0].toLocaleLowerCase() == "n") {
-    return console.log("Okay");
-  } else {
-    contador++;
-    return console.log('Responda so com "Sim" ou "Não"');
+function Validar(resposta: string) {
+  while (true) {
+    if (
+      (resposta[0].toLocaleLowerCase() == "s") ||
+      resposta[0].toLocaleLowerCase() == "n"
+    ) {
+      if (resposta[0].toLocaleLowerCase() == "s") {
+        contador++;
+      } else {
+      }
+      return resposta;
+    } else {
+      resposta = prompt(chalk.red("Responda só com 'SIM' ou 'NÃO'"));
+    }
   }
 }
 
@@ -38,8 +46,7 @@ export async function Detetive() {
     let pergunta = await prompt(perguntas[i]);
     console.clear();
     console.log(respostas[i]);
-    ValidarPergunta(pergunta);
-    console.log(contador);
+    Validar(pergunta);
   }
   if (contador >= 4) {
     console.clear();
