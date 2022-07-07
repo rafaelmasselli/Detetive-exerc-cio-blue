@@ -94,6 +94,12 @@ export function Jokenpo() {
     again = prompt(`Deseja jogar novamente? Digite "Sim" ou "Nao"`)
       .toLocaleLowerCase()
       .trim("");
+
+    while (again[0] != "s" && again[0] != "n") {
+      again = prompt(chalk.red(`Deseja jogar novamente? Digite "Sim" ou "Nao"`))
+        .toLocaleLowerCase()
+        .trim("");
+    }
   }
   if (again[0].toLocaleLowerCase() == "n") {
     console.log("Ate uma proxima vez");
