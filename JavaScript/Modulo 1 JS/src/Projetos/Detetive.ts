@@ -23,7 +23,7 @@ let contador = 0;
 function Validar(resposta: string) {
   while (true) {
     if (
-      (resposta[0].toLocaleLowerCase() == "s") ||
+      resposta[0].toLocaleLowerCase() == "s" ||
       resposta[0].toLocaleLowerCase() == "n"
     ) {
       if (resposta[0].toLocaleLowerCase() == "s") {

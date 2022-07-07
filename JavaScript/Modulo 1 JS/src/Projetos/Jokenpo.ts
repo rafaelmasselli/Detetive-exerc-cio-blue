@@ -1,32 +1,48 @@
 const prompt = require("prompt-sync")();
+import chalk from "chalk";
+
+let roundsFished = 0;
+
+let victories = 0;
+let victoriesBoot = 0;
+
+let draws = 0;
+let again = "s";
 
 export function Jokenpo() {
-  let roundsFished = 0;
-  let victories = 0;
-  let victoriesBoot = 0;
-  let again = true;
-
   const opinions = ["pedra", "papel", "tesoura"];
   console.clear();
 
-  do {
+  while (again === "s") {
+    roundsFished = 0;
+
+    victories = 0;
+    victoriesBoot = 0;
+
+    draws = 0;
+    again = "s";
+
     let rounds = parseInt(
-      prompt("Digite quantas partidadas voce deseja jogar")
+      prompt(chalk.yellow("Digite quantas partidas voce deseja jogar")).trim("")
     );
 
     while (rounds % 1 != 0) {
-      rounds = parseInt(prompt("Digite quantas partidadas voce deseja jogar"));
+      rounds = parseInt(prompt(chalk.red("Digite apenas números")));
     }
 
     do {
       let resultBoot = opinions[Math.floor(Math.random() * 3)];
 
       let responseUser = prompt(
-        "Escolha entre papel, pedra ou tesoura: "
-      ).toLocaleLowerCase();
+        chalk.yellow("Escolha entre papel, pedra ou tesoura: ")
+      )
+        .toLocaleLowerCase()
+        .trim("");
 
       while (!opinions.includes(responseUser)) {
-        responseUser = prompt("").toLocaleLowerCase();
+        responseUser = prompt(chalk.red("Escolha so papel pedra ou tesoura"))
+          .toLocaleLowerCase()
+          .trim("");
       }
 
       if (
@@ -35,30 +51,51 @@ export function Jokenpo() {
         (responseUser == "papel" && resultBoot == "pedra")
       ) {
         victories++;
-        console.log("Voce ganhou");
+        console.clear();
         console.log(
-          `Voce escolheu ${responseUser} e o robo escolheu ${resultBoot} `
+          chalk.green(
+            ` "Voce ganhou"  Voce escolheu ${responseUser} e o robô escolheu ${resultBoot} `
+          )
         );
       } else if (responseUser === resultBoot) {
-        console.log("deu empate");
+        draws++;
+        console.log(chalk.bgMagenta("deu empate"));
       } else {
         victoriesBoot++;
-        console.log("voce Perdeu");
+        console.clear();
         console.log(
-          `Voce escolheu ${responseUser} e o robo escolheu ${resultBoot} `
+          chalk.red(
+            `"Voce perdeu" Voce escolheu ${responseUser} e o robô escolheu ${resultBoot}`
+          )
         );
       }
 
       roundsFished++;
     } while (roundsFished < rounds);
 
-    if ((roundsFished = rounds)) {
-      let responseAgain = prompt(
-        "Deseja jogar novamente? digite 'Sim' ou 'Não'"
+    if (victories > victoriesBoot) {
+      console.log(
+        chalk.blue(
+          `Voce e o vencedor com ${victories} pontos contra o robô que fez ${victoriesBoot} pontos e ${draws} empates`
+        )
       );
-     
-    } else if (!again) {
-      console.clear();
+    } else if (victories < victoriesBoot) {
+      console.log(
+        chalk.red(
+          `Voce perdeu com ${victories} pontos e ${draws} embates, contra o robô que fez ${victoriesBoot} pontos`
+        )
+      );
+    } else {
+      console.log(
+        `Houve um embate com ${victories} pontos iguais e ${draws} empates`
+      );
     }
-  } while (again);
+
+    again = prompt(`Deseja jogar novamente? Digite "Sim" ou "Nao"`)
+      .toLocaleLowerCase()
+      .trim("");
+  }
+  if (again[0].toLocaleLowerCase() == "n") {
+    console.log("Ate uma proxima vez");
+  }
 }
