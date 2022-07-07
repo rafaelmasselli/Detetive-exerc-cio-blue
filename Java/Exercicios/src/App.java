@@ -1,26 +1,19 @@
 import java.util.Scanner;
 
+
 public class App {
     public static void main(String[] args) throws Exception {
+      Scanner sc = new Scanner(System.in);
+      String[] array;
 
-        Scanner sc = new Scanner(System.in);
-         
-        int salario , percentual,  aumentoDoSalario;
-         salario = 10;
-
-        if(salario <= 200){
-            percentual = 20;
-        }else if(salario <=700){
-            percentual = 15;
-        }else if(salario <= 1500){
-            percentual = 10;
-        }else {
-            percentual = 5;
+      int number = sc.nextInt();
+  
+      for(int i = 0; i < number; i ++){
+        if((i % 2) == 0){
+          System.out.println(  i+ " e um numero par");
+        } else {
+          System.out.println(  i+ " e um numero impar");
         }
-        System.out.println("Salario antes do reajuste " + salario);
-        percentual = percentual / 100;
-        
-
-        aumentoDoSalario = percentual * salario;
+      }
     }
-}
+  }  

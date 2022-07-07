@@ -1,17 +1,19 @@
-import express from "express"
-import { Detetive } from "./Projetos/Detetive"
-import { JornadaDoHeroi } from "./Projetos/JornadaDoHeroi"
+import express from "express";
+import { Detetive } from "./Projetos/Detetive";
+import { Jokenpo } from "./Projetos/Jokenpo";
+import { JornadaDoHeroi } from "./Projetos/JornadaDoHeroi";
 
-const app = express()
+const app = express();
 
 // Projeto detetive
-Detetive()
+// Detetive()
 
 // Jornada do Heroi
-// JornadaDoHeroi()
+// JornadaDoHeroi();
 
+// Jokenpo
+Jokenpo()
 
-
-app.listen(3000, (() => {
-  console.log("☕")
-}))
+app.listen(3000, () => {
+  console.log("☕");
+});

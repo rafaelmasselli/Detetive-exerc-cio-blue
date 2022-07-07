@@ -13,12 +13,12 @@
 
 ### Extension pack for java
 
-![Extensão java](/.github/Extensao1.png)
+![Extensão java](./.github/Extensao1.png)
 
 ### Code Runner
 
-![Extensão Code runner](/.github/Extensao2.png)
+![Extensão Code runner](./.github/Extensao2.png)
 
 ## 🚀 Iniciando o projeto
 
-![Iniciando o projeto com Code runner](/.github/startProject.gif)
+![Iniciando o projeto com Code runner](./.github/startProject.gif)
