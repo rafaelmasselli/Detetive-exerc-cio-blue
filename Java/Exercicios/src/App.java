@@ -4,16 +4,33 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
       Scanner sc = new Scanner(System.in);
-      String[] array;
 
-      int number = sc.nextInt();
-  
-      for(int i = 0; i < number; i ++){
-        if((i % 2) == 0){
-          System.out.println(  i+ " e um numero par");
-        } else {
-          System.out.println(  i+ " e um numero impar");
-        }
-      }
+      // CarroAutonimia();
+
     }
+    public static void CarroAutonimia() {
+
+    int [] arrayCarsAutonomia = {10, 11, 19, 30, 90};
+    int MaiorAutonomia;
+
+    MaiorAutonomia = 0;
+
+    for(int i = 0; i < arrayCarsAutonomia.length; i++) {
+        if(arrayCarsAutonomia[i] > MaiorAutonomia){
+          MaiorAutonomia = arrayCarsAutonomia[i];
+        }
+      } 
+     
+      System.out.println(MaiorAutonomia);
   }  
+
+  public static void ForArray() {
+  Scanner sc = new Scanner(System.in);
+  int response1, response2;
+  int[] array; 
+
+
+
+
+  }
+}
