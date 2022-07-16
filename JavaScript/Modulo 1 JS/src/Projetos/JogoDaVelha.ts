@@ -2,13 +2,16 @@ const prompt = require("prompt-sync")();
 
 let again = "s";
 let boot = "s";
+
 let spotsXUser = 0;
 let spotsXBoot = 0;
 let spotsYUser = 0;
 let spotsYBoot = 0;
+
 let User = 0;
 let User2 = 0;
 let Boot = 0;
+
 let atie = 0;
 let user = "";
 let user2 = "";
@@ -204,12 +207,7 @@ export function JogoDaVelha() {
         }
       }
     } while (!validate(true));
-
-    if (boot == "s") {
-      console.log();
-    } else {
-    }
-
+    
     again = prompt("Deseja jogar novamente?").toLocaleLowerCase().trim("");
     validateResponse(
       again,
