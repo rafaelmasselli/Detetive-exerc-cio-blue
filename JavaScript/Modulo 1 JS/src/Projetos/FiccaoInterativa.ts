@@ -202,6 +202,7 @@ function action() {
   }
 }
 function action2() {
+  day++;
   let res = prompt(
     "Depois de um logo dia sem progredir em nd voce decide ir para china para conseguir alguma resposta, deseja ir para china sul ou china norte?"
   );
