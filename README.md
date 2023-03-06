@@ -1,16 +1,17 @@
-<h1 align="center">Welcome to Algoritmo  👋</h1>
-<p>
-</p>
-
-> Projetos feito para solucionar problemas de algoritmo
+<h1 align="center">Bem-vindo ao os meus exercícios de Algoritmo 👋</h1>
 
 ## Author
 
 👤 **Rafael ykher masselli**
 
-* Github: [@rafaelmasselli](https://github.com/rafaelmasselli)
-* LinkedIn: [@rafaelmasselli](https://www.linkedin.com/in/rafael-masselli-740921214/)
+- Github: [@rafaelmasselli](https://github.com/rafaelmasselli)
+- LinkedIn: [@rafaelmasselli](https://www.linkedin.com/in/rafaelmasselli/)
 
-## Show your support
+## Iniciando o projeto
 
-Give a ⭐️ if this project helped you!
+```bash
+# Clonando o projeto
+$ git clone https://github.com/rafaelmasselli/Algoritmo
+# Entre na pasta da linguagem para ter mais instruções exemplo:
+cd JavasScript
+```
