@@ -2,11 +2,8 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class App {
-
     public static void main(String[] args) {
-
     }
-
     public static void positiveValue() {
         Scanner leitor = new Scanner(System.in);
         int cont = 0;
